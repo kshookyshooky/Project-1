@@ -43,11 +43,10 @@ img{
 }
 
 .logo{
-  width: 100%;
+  width: 111%;
   max-width: 350px;
-  margin: 1%;
-  border: 1;
-  display:block;
+  margin: -11%;
+  display: inline-table;
 }
 
 button{
@@ -83,7 +82,7 @@ nav{
   /* height: 60px; */
   text-align: center;
   font-family: "Work Sans", Helvetica, sans-serif;
-  padding: 20px;
+  padding: 19px;
   border-bottom: 10px solid rgb(255,198,0);
 }
 /* styles for hero or feature */
@@ -103,7 +102,7 @@ nav{
   position: absolute;
   top: 10px;
   left:5%;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
 }
 
 
