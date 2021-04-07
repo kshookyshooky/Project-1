@@ -52,12 +52,14 @@ img{
 
 button{
 
-  background: none;
+  background:rgb(255,198,0) ;
   padding: 5px;
-  border: 2px white solid;
-  color: white;
-  font-size: 1.3em;
+  border: 0;
+  color: black;
+  font-size: 1em;
   border-radius: 5px;
+  font-family: Century Gothic, sans-serif;
+
 
 }
 
@@ -86,8 +88,9 @@ nav{
 }
 /* styles for hero or feature */
 .hero{
-  background-image: url("img/hair.jpg");
-  height: 400px;
+  background-image: url("img/beach.jpg");
+  /* height: 278px; */
+  height: 45vh;
   background-size: cover;
   background-position: center;
   /* background stuff above */
@@ -97,8 +100,10 @@ nav{
 
 .wrapper{
   position: absolute;
-  top: 20%;
+  top: 10px;
   left:5%;
+  text-shadow: 0 0 10px black;
+  text
 }
 
 
@@ -160,10 +165,18 @@ footer a{
         .flexItem:first-child{
           margin-right: 0;
         }
+
+        .hero{
+          height: 400px;
+        }
 }
 
 @media screen and (min-width: 1300px){
   img{
     display: none;
+  }
+
+  .hero{
+    height:
   }
 }
