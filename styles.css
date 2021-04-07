@@ -90,12 +90,13 @@ nav{
 .hero{
   background-image: url("img/beach.jpg");
   /* height: 278px; */
-  height: 45vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   /* background stuff above */
   /* moving text below */
   position: relative;
+  font-size: 1.5em;
 }
 
 .wrapper{
@@ -103,7 +104,6 @@ nav{
   top: 10px;
   left:5%;
   text-shadow: 0 0 10px black;
-  text
 }
 
 
