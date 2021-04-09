@@ -6,7 +6,6 @@ body{
 
 }
 
-
 main{
     margin: 20px auto 20px auto;
     display: flex;
@@ -22,16 +21,23 @@ main{
   padding:30px;
 }
 
-h2{
+.hero h2{
   color: white;
+  line-height: 0.9em;
+  text-align: left;
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h3{
   color: white;
 }
 
- p{
+ .hero p{
   color:white;
+  text-align: left;
+  font-size: 0.7em;
 }
 
 
@@ -43,11 +49,19 @@ img{
 }
 
 .logo{
-  width: 111%;
+  width: 300%;
   max-width: 350px;
   margin: -11%;
   display: inline-table;
+  align: left
 }
+.logo-img {
+    margin:-76px;
+    padding-left: 68px;
+}
+
+
+
 
 button{
 
@@ -55,10 +69,11 @@ button{
   padding: 5px;
   border: 0;
   color: black;
-  font-size: 1em;
+  font-size: 0.9rem;
   border-radius: 5px;
   font-family: Century Gothic, sans-serif;
-
+  margin:auto;
+  text-align: center;
 
 }
 
@@ -77,21 +92,14 @@ button{
 
 
 
-nav{
-  background: rgb(25,79,144);
-  /* height: 60px; */
-  text-align: center;
-  font-family: "Work Sans", Helvetica, sans-serif;
-  padding: 19px;
-  border-bottom: 10px solid rgb(255,198,0);
-}
-/* styles for hero or feature */
+
 .hero{
   background-image: url("img/beach.jpg");
+  /* photoshop composite done by me */
   /* height: 278px; */
-  height: 50vh;
+  height: 80vh;
   background-size: cover;
-  background-position: center;
+  background-position: center 80%;
   /* background stuff above */
   /* moving text below */
   position: relative;
@@ -104,15 +112,26 @@ nav{
   left:5%;
   text-shadow: 0 0 5px black;
 }
+nav{
+  background: rgb(25,79,144);
+  /* height: 60px; */
+  text-align: right;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  padding: 3px;
+  border-bottom: 10px solid rgb(255,198,0);
+}
+/* styles for hero or feature */
 
-
+nav .left{
+  text-align: left;
+}
 
 nav a{
   text-align: center;
   color: white;
   font-size: 1.5 em;
-  padding: 15px;
-  margin:0 10px;
+  padding: 8px;
+  margin:6px -2px;
   display: inline-block;
   text-decoration: none;
 
@@ -132,6 +151,10 @@ footer{
   padding: 40px;
   border-top: 10px solid rgb(255,198,0);
 }
+footer a{
+  text-decoration: none;
+  text-align: right;
+}
 
 footer p{
 color:white;
@@ -139,6 +162,16 @@ color:white;
 
 footer a{
   color: white;
+
+}
+
+footer nav{
+  background: rgb(25,79,144);
+  /* height: 60px; */
+  text-align: center;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  border: 0;
+  padding: 0;
 
 }
 
