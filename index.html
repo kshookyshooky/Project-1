@@ -18,19 +18,35 @@
     <body>
 
 
-      <header class="header">
-        <a href="index.html" class="logo"><img class="logo-img" src="img/logo.png" alt="logo"></a>
-        <!-- Logo by me -->
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="index.html"><b>HOME</b></a></li>
-          <li><a href="about.html"><b>ABOUT</b></a></li>
-          <li><a href="contact.html"><b>CONTACT US</b></a></li>
-          <li><a href="menu.html"><b>MENU</b></a></li>
-          <li><a href="order.html"><b>ORDER</b></a></li>
-        </ul>
-      </header>
+      <header>
+  <nav>
+    <div id="navbar">
+      <div id="logo" class="reverse">
+        <div class="logo">SKILLETS DINER</div>
+         <div class="mobile-btn" onclick="openNav()">&#9776;</div>
+      </div>
+      <!-- Nav For Desktop -->
+<!--You can change the links below -->
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Now</a>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Slide Out Nav For Mobile -->
+<!---Change the links  to match the links above -->
+  <div id="mySidenav" class="sidenav">
+    <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Menu</a>
+    <a href="">Contact</a>
+  </div>
+</header>
 
       <div class="hero">
         <div class="wrapper">
@@ -61,6 +77,14 @@
 
         <p> &copy; 2020 Skillets Diner, LLC | <a href="#">Back to top</P>
         </footer>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
 
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
     </body>
 </html>
