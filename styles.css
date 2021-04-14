@@ -29,7 +29,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
-  padding: 6px;
+  padding: 0px;
   border-bottom: 10px solid rgb(255,198,0);
   color: white;
 }
@@ -56,7 +56,7 @@ a {
 
 .header .logo {
   display: block;
-  float: right;
+
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
@@ -169,7 +169,7 @@ h3{
 img{
     width: 100%;
     display: block;
-    margin: 1% auto 1% auto;
+    margin: 0% auto 1% auto;
     border: 0;
 }
 
@@ -237,7 +237,7 @@ footer{
 }
 footer a{
   text-decoration: none;
-  text-align: right;
+  text-align: center;
 }
 
 footer p{
@@ -246,6 +246,7 @@ color:white;
 
 footer a{
   color: white;
+  margin: 10px
 
 }
 
@@ -256,6 +257,7 @@ footer nav{
   font-family: "Work Sans", Helvetica, sans-serif;
   border: 0;
   padding: 20px 20px;
+  display: inline-block;
 
 }
 
@@ -283,19 +285,22 @@ footer nav{
         }
 
         .hero{
-          height: 615px;
+          height: 400px;
         }
 }
 
 @media screen and (min-width: 1300px){
   img{
-    display: none;
+
   }
 
   .hero{
-    height:
+    height:815px;
   }
 
+  footer nav{
+    text-align: center;
+  }
 }
 
 @media (min-width: 48em) {
