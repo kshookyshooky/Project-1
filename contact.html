@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Skillets Diner</title>
+
+        <link href="styles.css" rel="stylesheet" type="text/css">
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    </head>
+    <body>
+
+
+      <header>
+  <nav>
+    <div id="navbar">
+      <div id="logo" class="reverse">
+        <div class="logo">SKILLETS DINER</div>
+         <div class="mobile-btn" onclick="openNav()">&#9776;</div>
+      </div>
+      <!-- Nav For Desktop -->
+<!--You can change the links below -->
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Now</a>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Slide Out Nav For Mobile -->
+<!---Change the links  to match the links above -->
+  <div id="mySidenav" class="sidenav">
+    <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Menu</a>
+    <a href="">Contact</a>
+  </div>
+</header>
+
+  <div class="contact-hero">
+    <div class="form-container">
+      <form action="thanks.html">
+           <h3><b>CONTACT US</b></h3>
+           <p> Message us with any questions, tell us about any questions or concern you may have.<br>
+          </p>
+           <br>
+           <label>Your Name: <br>
+           <input type="text" id="name" name="name" required></label>
+
+           <label>Email: <br>
+           <input type="email" id="email" name="email" required></label>
+
+           <label>Message: <br>
+           <textarea id="message" required></textarea></label>
+
+           <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label>
+
+           <button type="submit" class="cursor" value="Submit">Submit</button>
+
+       </form>
+    </div> <!-- END OF CONTAINER DIV -->
+  </div>
+
+        </div>
+      </div>
+      <!-- Hero -->
+
+
+        <footer>
+          <nav>
+            <a href="contact.html">CONTACT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="careers.html">CAREERS</a>
+            <a href="nutrition.html">NUTRITION</a>
+            <a href="rewards.html">REWARDS</a>
+            <a href="account.html">MY ACCOUNT</a>
+          </nav>
+
+        <p> &copy; 2020 Skillets Diner, LLC | <a href="#">Back to top</P>
+        </footer>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+    </body>
+</html>
