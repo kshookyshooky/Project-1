@@ -216,6 +216,7 @@ button{
 
 .about-hero{
   background-image: url("img/about.jpg");
+  /* https://unsplash.com/photos/R_J6KjC68E4 */
   /* add img name above */
   height: 78vh;
   background-size: cover;
