@@ -90,8 +90,8 @@ nav{
 }
 
 #links a:hover {
-  color:blue;
-  background: #e9ebee;
+  color:black;
+  background: rgb(255,198,0);
 }
 
 /* =======================
@@ -120,7 +120,9 @@ nav{
 }
 
 .sidenav a:hover {
-  color: #fff;
+  color: black;
+  background: rgb(255,198,0)
+
 }
 
 .sidenav .closebtn {
@@ -169,9 +171,9 @@ a {
   color: white;
   line-height: 0.9em;
   text-align: left;
-  font-size: 4em;
-  margin-top: 176px;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-top: 41px;
+  margin-bottom: 20px
 }
 
 h3{
@@ -181,7 +183,7 @@ h3{
  .hero p{
   color:white;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 0.6em;
 }
 
 
@@ -204,7 +206,7 @@ button{
   padding: 12px;
   border: 0;
   color: black;
-  font-size: 1.1rem;
+  font-size: .7rem;
   border-radius: 25px;
   font-family: Century Gothic, sans-serif;
   margin:auto;
@@ -215,18 +217,39 @@ button{
 .about-hero{
   background-image: url("img/about.jpg");
   /* add img name above */
-  height: 400px;
+  height: 78vh;
   background-size: cover;
-  background-position: center;
+  background-position: center 57%;
   /* background stuff above */
   /* moving text below */
   position: relative;
+  font-size: 1em;
+}
+
+
+.about-hero h2{
+  color: white;
+  line-height: 0.9em;
+  text-align: left;
+  font-size: 2em;
+  margin-top: 41px;
+  margin-bottom: 20px;
+}
+
+.about-hero p{
+ color:white;
+ text-align: left;
+ font-size: 0.7em;
 }
 
 
 
 
+}
 
+.about-wrapper{
+  text-shadow: 0 0 40px black;
+}
 
 .hero{
   background-image: url("img/beach.jpg");

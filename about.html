@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Skillets Diner</title>
+
+        <link href="styles.css" rel="stylesheet" type="text/css">
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    </head>
+    <body>
+
+
+      <header>
+  <nav>
+    <div id="navbar">
+      <div id="logo" class="reverse">
+        <div class="logo">SKILLETS DINER</div>
+         <div class="mobile-btn" onclick="openNav()">&#9776;</div>
+      </div>
+      <!-- Nav For Desktop -->
+<!--You can change the links below -->
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Now</a>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Slide Out Nav For Mobile -->
+<!---Change the links  to match the links above -->
+  <div id="mySidenav" class="sidenav">
+    <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Menu</a>
+    <a href="">Contact</a>
+  </div>
+</header>
+
+      <div class="about-hero">
+        <div class="wrapper">
+
+
+          <h2>ABOUT US</h2>
+          <p>Our mission of Skillets Diner is to provide genuine dining experiences<br/>
+          with our extraordinary food and premium customer service. We<br/>
+          attempt to deliver American nostalgia the best way possible for all.</p>
+          <p>Currently we are expanding our franchasie to all<br/>
+          of South Florida. We'll soon open locations in West Palm Beach,<br/>
+          Boca Raton, Jupiter, and Miami. Skillets Diner will also make<br/> drive-thrus and carryout available across all locations.</p>
+
+          <p>For 40 years, Skillets Diner has carried on the tradition of<br/>
+           serving South Florida's the best, freshest, and tastiest<br/>
+           burgers, fries and shakes.</p>
+          <button>FRANCHISE WITH US</button>
+        </div>
+      </div>
+      <!-- Hero -->
+
+
+        <footer>
+          <nav>
+            <a href="contact.html">CONTACT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="careers.html">CAREERS</a>
+            <a href="nutrition.html">NUTRITION</a>
+            <a href="rewards.html">REWARDS</a>
+            <a href="account.html">MY ACCOUNT</a>
+          </nav>
+
+        <p> &copy; 2020 Skillets Diner, LLC | <a href="#">Back to top</P>
+        </footer>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+    </body>
+</html>
