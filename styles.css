@@ -178,6 +178,8 @@ a {
 
 h3{
   color: white;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
  .hero p{
@@ -268,7 +270,7 @@ button{
 /* START MOBILE FORM STYLES */
     .form-container{
 /*       TO CENTER add AUTO for margin right and left*/
-      margin: 20px auto;
+      margin: 0px auto;
 /*  WIDTH 100%  FOR MOBILE DEVICES*/
       width:90%;
       display:block;
@@ -314,7 +316,7 @@ button{
       /* Rounded corners */
       border-radius: 4px;
       /* Text color */
-      color:white;
+      color:black;
       margin-top: 20px;
       margin-bottom: 20px;
       padding:5px 20px;
@@ -373,6 +375,7 @@ footer{
   background:rgb(25,79,144);
   padding: 26px;
   border-top: 10px solid rgb(255,198,0);
+  text-align: center;
 }
 footer a{
   text-decoration: none;
