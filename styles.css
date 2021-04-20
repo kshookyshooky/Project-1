@@ -158,6 +158,8 @@ a {
   .mobile-btn {
     display: none;
   }
+
+
 }
 
 
@@ -203,7 +205,7 @@ h3{
 .hero{
   background-image: url("img/beach.jpg");
   /* photoshop composite done by me */
-  /* height: 278px; */
+  height: 408px;
 
   background-size: cover;
   background-position: center 80%;
@@ -218,6 +220,7 @@ h3{
   background-image: url("img/about.jpg");
   /* https://unsplash.com/photos/R_J6KjC68E4 */
   /* add img name above */
+  height: 408px;
 
   background-size: cover;
   background-position: center 57%;
@@ -329,6 +332,16 @@ footer nav{
 .form-container{
   text-shadow: 0 0 40px black;
 }
+
+/* map styles */
+.map{
+  width:85%;
+  margin: auto;
+  display: block;
+}
+
+
+
 /* START MOBILE FORM STYLES */
     .form-container{
 /*       TO CENTER add AUTO for margin right and left*/
@@ -385,6 +398,12 @@ footer nav{
       font-size: 1em;
     }
   /*        END MOBILE FORM STYLES */
+
+
+
+
+
+
 
     @media only screen and (min-width: 1000px) {
  /*         START DESKTOP FORM STYLES */
@@ -453,6 +472,10 @@ footer nav{
 /* about style */
 
 @media screen and (min-width: 700px) {
+
+        .map{
+          width: 95%;
+        }
 
         .logo {
           /* width:350px; */
