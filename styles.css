@@ -19,6 +19,9 @@ main{
 
 }
 
+p{
+  color:white;
+}
 
 
 a {
@@ -435,6 +438,16 @@ footer nav{
   font-size: 1em;
 }
 
+}
+
+.flexItem{
+    flex-basis: 300px;
+    flex-grow:1;
+    /* -------- Changed margin  --------*/
+    margin: 1% 10px;
+    background: rgb(255, 255, 255, 0.5);
+    /* -------- Changed padding  --------*/
+    padding:30px;
 }
 
 /* about style */
