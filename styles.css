@@ -194,6 +194,7 @@ a {
 }
 
 
+
 h3{
   color: white;
   margin-top: 0;
@@ -507,6 +508,20 @@ footer nav{
   }
 }
 
+.video{
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /*16:9*/
+}
+  .video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    hieght:100%;
+  }
+}
+
 
 @media screen and (min-width: 700px) {
 
@@ -524,7 +539,8 @@ footer nav{
 
         .flexItem{
 
-          margin: 20px;
+          margin: 5px;
+
 
         }
 
@@ -558,6 +574,13 @@ footer nav{
               font-size: 1em;
         }
 
+
+        .wrapper-container{
+          width:90%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
 }
 
 
