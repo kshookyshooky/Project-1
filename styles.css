@@ -423,6 +423,7 @@ footer nav{
       button{
         margin-top: 2%;
         margin-bottom: 20%;
+
       }
 
 
@@ -478,6 +479,9 @@ footer nav{
 
 @media screen and (min-width: 400px)
 {
+  .hero h2{
+    font-size: 3em;
+  }
 
   .about-hero p {
             color: white;
@@ -527,18 +531,20 @@ footer nav{
 
         .wrapper{
           position: absolute;
-          top: 10px;
+          top: -9px;
           left:5%;
           text-shadow: 0 0 5px black;
         }
 
         .hero h2{
           font-size: 3em;
-          line-height: 1.1em
+          line-height: 1.1em;
+          padding-top: 28px;
         }
 
         .about-hero h2{
           font-size: 3em;
+          padding-top: 28px;
         }
 
         .about-hero p {
