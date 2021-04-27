@@ -480,15 +480,23 @@ footer nav{
 
 @media screen and (min-width: 400px)
 {
-  .hero h2{
-    font-size: 3em;
+
+  #logo{
+    font-size: 20px;
+    padding-top: 15px;
+    grid-template-columns: auto 6px
   }
 
-  .about-hero p {
-            color: white;
-            text-align: left;
-            font-size: 0.6em;
+  .mobile-btn{
+    font-size: 17px;
+
   }
+
+  .hero h2{
+    font-size: 3em;
+    line-height: 1em
+  }
+
 
   button{
         margin-top: 10px;
@@ -497,7 +505,7 @@ footer nav{
 
 
   .about-hero h2{
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.6em;
   }
 
@@ -506,7 +514,7 @@ footer nav{
             text-align: left;
             font-size: 0.7em;
   }
-}
+
 
 .video{
   position: relative;
@@ -524,6 +532,11 @@ footer nav{
 
 
 @media screen and (min-width: 700px) {
+
+        #logo{
+        padding-top: 0px;
+        }
+
 
         .map{
           width: 95%;
@@ -590,7 +603,7 @@ footer nav{
   }
 
   .about-hero p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .hero h2{
     font-size: 7em;
@@ -604,6 +617,14 @@ footer nav{
 
   button{
     font-size: 1.7em;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .about-hero{
+    height: 120vh;
   }
 
 }
