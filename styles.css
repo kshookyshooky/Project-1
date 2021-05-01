@@ -1,54 +1,29 @@
  @import url("https://use.typekit.net/slm8iic.css");
 
-
-
-
 body{
   margin: 0;
   font-family: Century Gothic, sans-serif;
   background: rgb(25,79,144);
-
+  color: white;
 }
-
-
-
-main{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
-
-
-
-.flexItem{
-  flex-basis: 300px;
-  flex-grow: 1;
-  margin: 2px;
-  background-color: rgb(255, 255,255, 0.5);
-  padding:30px;
-}
-
 p{
   color:white;
 }
-
-
 a {
   color: White;
-  font-family: "Work Sans", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
-.logo-img{
-  float: left;
-
+img{
+    width: 100%;
+    display: block;
+    margin: 0% auto 1% auto;
+    border: 0;
 }
-
+.logo{
+  max-width: 400px;
+}
 nav{
-
 }
-
 #navbar {
   display: grid;
   min-height: 57px;
@@ -56,7 +31,8 @@ nav{
   background-color: rgb(25,79,144);
   color:white;
 /*   grid-gap: 1.5em; */
-  padding: 0 40px;
+  /* padding: 0 40px; */
+  padding: 0 40px 0 26px;
   -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
   -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
   box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -65,9 +41,6 @@ nav{
 #navbar a{
   color:white;
 }
-
-
-
 #logo {
   display: grid;
   justify-content: space-between;
@@ -78,14 +51,12 @@ nav{
   color: white;
   text-transform: uppercase;
 }
-
 .mobile-btn{
   font-size:30px;
   cursor:pointer;
   font-weight:bold;
   justify-content:end;
 }
-
 #links {
   display: grid;
   justify-content: right;
@@ -94,7 +65,6 @@ nav{
 /*   grid-gap: 1.5em; */
   font-family: "Open Sans", sans-serif;
 }
-
 #links a {
   text-decoration: none;
   color: white;
@@ -102,12 +72,10 @@ nav{
   font-weight: bold;
   padding:20px 10px;
 }
-
 #links a:hover {
   color:black;
   background: rgb(255,198,0);
 }
-
 /* =======================
 ******* Mobile Menu ******
 ========================*/
@@ -123,7 +91,6 @@ nav{
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -132,13 +99,10 @@ nav{
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
   color: black;
   background: rgb(255,198,0)
-
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -146,11 +110,6 @@ nav{
   font-size: 36px;
   margin-left: 50px;
 }
-
-a {
-  font-family: "Open Sans", sans-serif;
-}
-
 /* Mobile to Tablet  */
 @media (min-width: 320px) and (max-width: 767px) {
   #links,
@@ -164,99 +123,81 @@ a {
   }
 }
 
-/* Tablet to Desktop */
-@media (min-width: 768px) {
-  .mobile-btn {
-    display: none;
-  }
-
-
-}
-
-
-
-
-
-.hero h2{
-  color: white;
-  /* line-height: 1.1; */
-  text-align: left;
-  /* font-size: 3em; */
-  margin-top: 0px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-.wrapper{
-  margin: auto;
-  width:90%;
-
-}
-
-
-
-h3{
-  color: white;
-  margin-top: 0;
-  padding-top: 20px;
-}
-
- .hero p{
-  color:white;
-  text-align: left;
-  line-height: 1.4;
-
-}
 
 .hero{
   background-image: url("img/beach.jpg");
   /* photoshop composite done by me */
-  height: 408px;
-
+  min-height: 80vh;
   background-size: cover;
   background-position: center 80%;
-  /* background stuff above */
-  /* moving text below */
   position: relative;
-
-
 }
 
 .about-hero{
   background-image: url("img/about.jpg");
   /* https://unsplash.com/photos/R_J6KjC68E4 */
-  /* add img name above */
-  height: 408px;
-
+  min-height: 400px;
   background-size: cover;
   background-position: center 57%;
-  /* background stuff above */
-  /* moving text below */
   position: relative;
-  font-size: 1em;
+  padding-bottom:15px;
 }
 
-button{
-
-  background:rgb(255,198,0) ;
-  padding: 12px;
-  border: 0;
-  color: black;
-  font-size: .7rem;
-  border-radius: 25px;
-  font-family: Century Gothic, sans-serif;
-  margin:auto;
-  text-align: center;
+.contact-hero{
+  background-image: url("img/contact.jpg");
+  /* https://unsplash.com/photos/uVPV_nV17Tw */
+  min-height: 400px;
+  background-size: cover;
+  background-position: center 57%;
+  position: relative;
+  padding-bottom:15px;
 
 }
 
-
-img{
-    width: 100%;
-    display: block;
-    margin: 0% auto 1% auto;
-    border: 0;
+.hero h2, .about-hero h2, .contact-hero h2{
+  color: white;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-shadow: 0 0 40px black;
 }
+.hero p, .about-hero p, .contact-hero p{
+ color:white;
+ text-align: left;
+ font-size: 1.2em;
+ line-height: 1.4;
+ text-shadow: 0 0 30px black;
+
+}
+
+.wrapper{
+  margin: 0 20px;
+  width:70%;
+
+}
+.hero .wrapper{
+    max-width:500px;
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+.blurb{
+    width:80%;
+    margin: auto;
+}
+.flexItem{
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin: 1.5%;
+  background-color: rgb(255, 255,255, 0.2);
+  padding:30px;
+}
+
 
 
 footer{
@@ -276,8 +217,8 @@ color:white;
 
 footer a{
   color: white;
-  margin: 10px
-
+  margin: 10px;
+  display:block;
 }
 
 footer nav{
@@ -292,354 +233,98 @@ footer nav{
 }
 
 
-
-
-
-
-
-
-
-
-
-.about-hero h2{
-  color: white;
-  line-height: 1.9em;
-  text-align: left;
-  font-size: 5em;
-  margin-top: 0px;
-  margin-bottom: 31px;
-}
-
-.about-hero p{
- color:white;
- text-align: left;
- font-size: 0.9em;
-}
-
-
-.form-container p{
-  color: white
-}
-
-.contact-hero{
-  background-image: url("img/contact.jpg");
-  https://unsplash.com/photos/uVPV_nV17Tw
-  height: 78vh;
-  background-size: cover;
-  background-position: center 57%;
-  position: relative;
-}
-
-
-.form-container label{
-  color: white;
-}
-
+/* START MOBILE FORM STYLES */
 .form-container{
-  text-shadow: 0 0 40px black;
+  margin: 0px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+  width:100%;
+  display:block;
+  font-size:1em;
 }
+form p{
+  margin-bottom:5px;
+  color:white;
+}
+label{
+  display:block;
+  color: white;
+}
+#newsletter input{
+  display:inline;
+  width:auto;
+}
+input{
+  /* FOR MOBILE use WIDTH:100% */
+  width:100%;
+  padding:1.7%;
+  margin:1.5% 0;
+  font-size: 1em;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  box-sizing: border-box;
+}
+textarea{
+  min-height:100px;
+   /* FOR MOBILE use WIDTH:100% */
+  width: 100%;
+  padding: 2%;
+  margin: 1.5% 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button{
+  background: rgb(255,198,0);
+  border: 1px solid black;
+  border-radius: 4px;
+  color:black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding:5px 20px;
+  font-size: 1rem;
+}
+/*        END MOBILE FORM STYLES */
 
 /* map styles */
 .map{
-  width:85%;
+  width:100%;
   margin: auto;
   display: block;
 }
 
-
-
-/* START MOBILE FORM STYLES */
-    .form-container{
-/*       TO CENTER add AUTO for margin right and left*/
-      margin: 0px auto;
-/*  WIDTH 100%  FOR MOBILE DEVICES*/
-      width:90%;
-      display:block;
-      font-size:1em;
-
-    }
-    form p{
-      margin-bottom:5px;
-
-    }
-    label{
-      display:block;
-    }
-    #newsletter input{
-      display:inline;
-      width:auto;
-    }
-    input{
-      /* FOR MOBILE use WIDTH:100% */
-      width:100%;
-      padding:1.7%;
-      margin:1.5% 0;
-      font-size: 1em;
-      border-radius: 4px;
-      border:1px solid #ccc;
-      box-sizing: border-box;
-    }
-    textarea{
-      min-height:100px;
-       /* FOR MOBILE use WIDTH:100% */
-      width: 100%;
-      padding: 2%;
-      margin: 1.5% 0;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button{
-      /* CHANGED COLORS bellow */
-      background: rgb(255,198,0);
-      border: 1px solid black;
-      /* Rounded corners */
-      border-radius: 4px;
-      /* Text color */
-      color:black;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding:5px 20px;
-      font-size: 1em;
-    }
-  /*        END MOBILE FORM STYLES */
-
-
-
-
-
-
-
-    @media only screen and (min-width: 1000px) {
- /*         START DESKTOP FORM STYLES */
-      .form-container{
- /*         CHANGE WIDTH of FORM TO YOUR PREFERENCE */
-        width:50%;
-      }
-      input{
-         /* CHANGE WIDTH TO YOUR PREFERENCE */
-        width:60%;
-      }
-      button{
-        margin-top: 2%;
-        margin-bottom: 20%;
-
-      }
-
-
-
-.about-wrapper{
-  text-shadow: 0 0 40px black;
+.video{
+position: relative;
+height: 0;
+padding-bottom: 56.25%; /*16:9*/
 }
-
-.contact-p{
-  color:white;
+.video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
 }
-
-.hero{
-  background-image: url("img/beach.jpg");
-  /* photoshop composite done by me */
-  /* height: 278px; */
-  height: 78vh;
-  background-size: cover;
-  background-position: center 80%;
-  /* background stuff above */
-  /* moving text below */
-  position: relative;
-
-
-}
-
-.about-hero{
-  background-image: url("img/about.jpg");
-  /* https://unsplash.com/photos/R_J6KjC68E4 */
-  /* add img name above */
-  height: 78vh;
-  background-size: cover;
-  background-position: center 57%;
-  /* background stuff above */
-  /* moving text below */
-  position: relative;
-  font-size: 1em;
-}
-
-}
-
-.flexItem{
-    flex-basis: 300px;
-    flex-grow:1;
-    /* -------- Changed margin  --------*/
-    margin: 1% 10px;
-    background: rgb(255, 255, 255, 0.5);
-    /* -------- Changed padding  --------*/
-    padding:30px;
-}
-
-/* about style */
 
 @media screen and (min-width: 400px)
 {
-
   #logo{
     font-size: 20px;
     padding-top: 15px;
     grid-template-columns: auto 6px
   }
-
   .mobile-btn{
     font-size: 20px;
-
   }
 
-  .hero h2{
+  .hero h2, .about-hero h2, .contact-hero h2{
+    text-shadow: 0 0 30px black;
     font-size: 3em;
-    line-height: 1em
-  }
-
-
-  button{
-        margin-top: 10px;
-        font-size: 0.7em;
-  }
-
-
-  .about-hero h2{
-    font-size: 3em;
-    line-height: 1.6em;
-  }
-
-  .about-hero p {
-            color: white;
-            text-align: left;
-            font-size: 0.7em;
-  }
-
-
-.video{
-  position: relative;
-  height: 0;
-  padding-bottom: 56.25%; /*16:9*/
-}
-  .video iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width:100%;
-    hieght:100%;
-  }
-}
-
-
-@media screen and (min-width: 700px) {
-
-        #logo{
-        padding-top: 0px;
-        }
-
-
-        .map{
-          width: 95%;
-        }
-
-        .logo {
-          /* width:350px; */
-        }
-        img{
-            width:30%;
-            display: inline;
-        }
-
-        .flexItem{
-
-          margin: 5px;
-
-
-        }
-
-
-        .wrapper{
-          position: absolute;
-          top: -9px;
-          left:5%;
-          text-shadow: 0 0 5px black;
-        }
-
-        .hero h2{
-          font-size: 3em;
-          line-height: 1.1em;
-          padding-top: 28px;
-        }
-
-        .about-hero h2{
-          font-size: 3em;
-          padding-top: 28px;
-        }
-
-        .about-hero p {
-                  color: white;
-                  text-align: left;
-                  font-size: 1em;
-        }
-
-        button{
-
-              font-size: 1em;
-        }
-
-
-        .wrapper-container{
-          width:90%;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-        }
-}
-
-@media screen and (min-width: 1000px){
-
-  .about-hero h2{
-    font-size: 7em;
-  }
-
-  .about-hero p {
-    font-size: 1.3em;
-  }
-  .hero h2{
-    font-size: 7em;
-    line-height: 0.9;
-  }
-
-  .hero p{
-    font-size: 2em;
     line-height: 1em;
   }
-
-  button{
-    font-size: 1.7em;
-  }
-
-  .hero{
-    height: 100vh;
-  }
-
-  .about-hero{
-    height: 120vh;
-  }
-
-}
-
-@media screen and (min-width: 1300px){
-  .hero p{
-    font-size: 2em;
-
-  }
-
-
-  footer nav{
-    text-align: center;
-  }
-
+    .hero p, .about-hero p, .contact-hero p{
+      text-shadow: 0 0 40px black;
+    }
 }
 
 @media (min-width: 48em) {
@@ -657,4 +342,80 @@ footer nav{
   .header .menu-icon {
     display: none;
   }
+}
+
+/*START DESKTOP STYLES */
+
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+    .hero h2, .about-hero h2, .contact-hero h2{
+      text-shadow: 0 0 40px black;
+      font-size: 3em;
+    }
+    .hero p, .about-hero p, .contact-hero p{
+     font-size: 1.5em;
+     line-height: 1.4;
+     text-shadow: 0 0 30px black;
+
+    }
+}
+@media only screen and (min-width: 700px) {
+    .logo{
+      max-width: 500px;
+    }
+    .form-container{
+      /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
+      width:70%;
+    }
+    .form-container,.map{
+        flex-basis: 45%;
+        flex-grow:1;
+        margin: 1% 10px;
+    }
+    input{
+     /* CHANGE WIDTH TO YOUR PREFERENCE */
+     width:60%;
+    }
+    button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .hero{
+      height: 78vh;
+    }
+    .about-hero{
+      /* height: 78vh; */
+    }
+    .about-wrapper{
+      text-shadow: 0 0 40px black;
+    }
+    .wrapper{
+      margin: 0 2%;
+      width:60%;
+    }
+    .blurb{
+        font-size: 1.3em;
+    }
+    .hero h2, .about-hero h2, .contact-hero h2{
+      text-shadow: 0 0 40px black;
+      font-size: 4em;
+      line-height: 1em;
+    }
+    .hero p, .about-hero p, .contact-hero p{
+     font-size: 1.2em;
+     line-height: 1.1em;
+     text-shadow: 0 0 30px black;
+    }
+    .flexItem{
+        flex-basis: 300px;
+        padding:30px;
+    }
+
+    footer a{
+        display: inline-block;
+    }
 }
